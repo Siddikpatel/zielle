@@ -1,0 +1,32 @@
+.footer {
+    height: 50vh;
+    background-color: var(--CLR-PRIMARY);
+    margin-top: 1.4em;
+    padding: 1.4em;
+}
+
+.ack {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.ack ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--CLR-LINKS);
+    font-size: clamp(1em, 1.1em, 1.3em);
+}
+
+.ack>ul li:hover, .ack>ul li:focus {
+    color: var(--CLR-LINK-HOVER);
+    cursor: pointer;
+}
+
+.ack>ul li:first-child {
+    font-weight: 800;
+}

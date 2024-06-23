@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    font-size: clamp(1.2em, 2.9vh, 1.5em);
+    position: sticky;
+    top: 0;
+    padding: 0.4em 0.4em
+}
+
+.nav .icon {
+    font-size: 1.7em;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--CLR-PRIMARY);
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-inline: 1em;
+}
+
+.nav .donate {
+    padding-right: 0.5em;
+}
+
+:where(.nav li, .nav .donate) {
+    font-weight: 800;
+}
+
+.nav a {
+    color: var(--CLR-LINK-NAV);
+}
+
+.nav a:hover, .nav a:focus, .donate:hover {
+    color: var(--CLR-PRIMARY);
+}
+
+

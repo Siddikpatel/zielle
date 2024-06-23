@@ -1,0 +1,72 @@
+.objective {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 1.5em;
+}
+
+.objective .heading {
+    font-size: clamp(1em, 11vw, 20em);
+    color: var(--CLR-PRIMARY);
+}
+
+.promo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 1.5em;
+}
+
+.promo .desc {
+    text-align: end;
+    font-size: clamp(1vh, 5vw, 12em);
+    /* max-width: 30ch; */
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.2em;
+}
+
+.signup {
+    align-self: flex-end;
+    margin-top: 1em;
+}
+
+.shirts {
+    width: 40vw;
+    top: 10;
+    right: 0;
+}
+
+.watches {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 150px;
+    width: 30vw;
+}
+
+.offerbtn {
+    align-self: flex-start;
+}
+
+@media(max-width: 800px) {
+    .objective .heading {
+        font-size: clamp(50px, 15vw, 80px);
+    }
+
+    .promo .desc {
+        font-size: 60px;
+    }
+
+    .shirts {
+        width: 350px;
+    }
+
+    .watches {
+        width: 250px;
+    }
+}
