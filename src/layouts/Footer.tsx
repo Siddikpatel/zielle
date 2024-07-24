@@ -9,13 +9,13 @@ export const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.ack}>
-                <ul>
+                <ul className={`${styles.col1}`}>
                     <li>Browse</li>
                     <li><Link to="/home">Home</Link></li>
                     <li>Discounts</li>
                     <li><Link to="/about">About</Link></li>
                 </ul>
-                <ul>
+                <ul className={`${styles.col2}`}>
                     <li>Websites</li>
                     <li>Freepik</li>
                     <li>Amazon</li>
@@ -23,14 +23,14 @@ export const Footer = () => {
                     <li>Bewakoof</li>
                     <li>Flipkart</li>
                 </ul>
-                <ul>
+                <ul className={`${styles.col3}`}>
                     <li>Me</li>
                     <li>LinkedIn</li>
                     <li>Github</li>
                     <li>Instagram</li>
                     <li>Email</li>
                 </ul>
-                <ul>
+                <ul className={`${styles.col4}`}>
                     <li>Donate Me</li>
                 </ul>
             </div>
