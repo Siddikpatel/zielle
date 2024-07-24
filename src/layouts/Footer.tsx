@@ -4,6 +4,8 @@ import '../App.css'
 
 export const Footer = () => {
 
+    const currentYear = new Date().getFullYear();
+
     return (
         <div className={styles.footer}>
             <div className={styles.ack}>
@@ -33,7 +35,7 @@ export const Footer = () => {
                 </ul>
             </div>
             <div className={styles.copyright}>
-
+                <p>&#169; <time>{currentYear}</time> Siddik Patel</p>
             </div>
         </div>
     );

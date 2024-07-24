@@ -1,15 +1,15 @@
 .footer {
-    height: 50vh;
+    height: fit-content;
     background-color: var(--CLR-PRIMARY);
-    margin-top: 1.4em;
-    padding: 1.4em;
+    /* margin-top: 1.4em; */
+    font-size: clamp(1.2em, 2.6vh, 3em);
+    padding: 1.5em 1.5em 0.5em;
 }
 
 .ack {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 100%;
 }
 
 .ack ul {
@@ -18,15 +18,21 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 1em;
-    color: var(--CLR-LINKS);
-    font-size: clamp(1em, 1.1em, 1.3em);
-}
-
-.ack>ul li:hover, .ack>ul li:focus {
-    color: var(--CLR-LINK-HOVER);
-    cursor: pointer;
+    color: var(--FOOTER-LINK-CLR);
 }
 
 .ack>ul li:first-child {
+    font-size: 1.2em;
     font-weight: 800;
+    cursor: default;
+}
+
+.ack>ul li:not(:first-child):is(:hover, :focus) {
+    color: var(--FOOTER-LINK-HOVER);
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2em;
 }

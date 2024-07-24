@@ -7,14 +7,15 @@
     backdrop-filter: blur(10px);
     transform: translate3d(0, 0, 0);
     width: 100%;
-    font-size: clamp(1.2em, 2.9vh, 1.5em);
-    position: sticky;
+    font-size: clamp(1.2em, 2.6vh, 3em);
+    position: fixed;
     top: 0;
-    padding: 0.4em 0.4em
+    padding: 0.4em 0.4em;
+    z-index: 2;
 }
 
 .nav .icon {
-    font-size: 1.7em;
+    font-size: clamp(1.7em, 3.5vh ,5.7em);
     font-weight: 700;
     font-style: italic;
     color: var(--CLR-PRIMARY);
@@ -37,11 +38,9 @@
 }
 
 .nav a {
-    color: var(--CLR-LINK-NAV);
+    color: var(--NAV-LINK-CLR);
 }
 
 .nav a:hover, .nav a:focus, .donate:hover {
     color: var(--CLR-PRIMARY);
 }
-
-

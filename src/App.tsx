@@ -12,12 +12,14 @@ export const App = () => {
   return (
     <div>
       <Navbar/>
-      <Routes>
+      <div className={`main`}>
+        <Routes>
 
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/home' element={<HomePage/>}/>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/home' element={<HomePage/>}/>
 
-      </Routes>
+        </Routes>
+      </div>
       <Footer/>
     </div>
   );
