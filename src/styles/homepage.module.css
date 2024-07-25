@@ -7,21 +7,18 @@
     flex-wrap: wrap;
     padding: 1.2em;
     position: relative;
-    /* margin: 0 auto;
-    width: 70vw;
-    position: relative; */
 }
 
 .ipads {
     width: clamp(3em, 30vw ,30em);
-    height: auto;
+    /* height: auto; */
     top: 60vh;
     left: 20px;
 }
 
 .hat {
     width: clamp(3em, 30vw , 20em);;
-    height: auto;
+    /* height: auto; */
     top: 20vh;
     left: 100px;
     rotate: -30deg;
@@ -46,16 +43,6 @@
     flex-wrap: wrap;
     padding-right: 1.5em;
 }
-
-/* .promo .desc {
-    text-align: end;
-    font-size: clamp(1vh, 5vw, 12em); -
-    align-self: flex-end;
-    max-width: 30ch; -
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 0.2em;
-} */
 
 .flex_align_right {
     align-self: flex-end;

@@ -19,17 +19,17 @@ export const Navbar = () => {
                 <div className={styles.icon}>Z</div>
                 <div className={`${styles.nav_desktop}`}>
                     <ul>
-                        <li className={styles.hideOnMobile}>
+                        <li className={styles.hideOnMobile} onClick={() => window.scrollTo(0, 0)}>
                             <NavLink to="/home">
                                 Home
                             </NavLink>
                         </li>
-                        <li className={styles.hideOnMobile}>
+                        <li className={styles.hideOnMobile} onClick={() => window.scrollTo(0, 0)}>
                             <NavLink to="/about">
                                 About
                             </NavLink>
                         </li>
-                        <li className={styles.hideOnMobile}>
+                        <li className={styles.hideOnMobile} onClick={() => window.scrollTo(0, 0)}>
                             Donate Me
                         </li>
                         <li onClick={() => setIsSidebarVisible(true)}>
@@ -43,17 +43,17 @@ export const Navbar = () => {
                             <li onClick={() => setIsSidebarVisible(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                             </li>
-                            <li onClick={() => setIsSidebarVisible(false)}>
+                            <li onClick={() => {setIsSidebarVisible(false); window.scrollTo(0,0)}}>
                                 <NavLink to="/home">
                                     Home
                                 </NavLink>
                             </li>
-                            <li onClick={() => setIsSidebarVisible(false)}>
+                            <li onClick={() => {setIsSidebarVisible(false); window.scrollTo(0,0)}}>
                                 <NavLink to="/about">
                                     About
                                 </NavLink>
                             </li>
-                            <li onClick={() => setIsSidebarVisible(false)}>
+                            <li onClick={() => {setIsSidebarVisible(false); window.scrollTo(0,0)}}>
                                 Donate Me
                             </li>
                         </ul>

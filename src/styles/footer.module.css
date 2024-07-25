@@ -1,7 +1,5 @@
 .footer {
-    height: fit-content;
     background-color: var(--CLR-PRIMARY);
-    /* margin-top: 1.4em; */
     font-size: clamp(1em, 2vh, 1.5em);
     padding: 1.5em 1.5em 0.5em;
 }
@@ -13,7 +11,6 @@
 }
 
 .ack ul {
-    list-style-type: none;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;

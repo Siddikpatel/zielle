@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className={styles.ack}>
                 <ul className={`${styles.col1}`}>
                     <li>Browse</li>
-                    <li><Link to="/home">Home</Link></li>
+                    <li onClick={() => window.scrollTo(0, 0)}><Link to="/home">Home</Link></li>
                     <li>Discounts</li>
                     <li><Link to="/about">About</Link></li>
                 </ul>
