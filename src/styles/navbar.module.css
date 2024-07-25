@@ -80,24 +80,31 @@
        height: 100vh;
        width: 250px;
        z-index: 10;
-       display: none;
+       display: flex;
        flex-direction: column;
        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
        background-color: rgba(255, 255, 255, 0.95);
-       padding-left: 1.2em;
+       /* padding-left: 1.2em; */
        backdrop-filter: blur(10px);
     }
 
     .nav_desktop li:last-child {
         display: block;        
     }
-
+/* 
     .nav_elements {
         padding: 1.3em;
-    }
+    } */
 
     .nav_elements li {
         width: 100%;
-        margin: 1em;
+        padding: 0.8em;
+        /* margin: 1em; */
     }
+
+    .nav_elements li:not(:first-child):hover {
+        background-color: rgb(188, 185, 185);
+    }
+
+
 }
