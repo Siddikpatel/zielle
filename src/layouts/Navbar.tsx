@@ -2,10 +2,15 @@ import { NavLink } from 'react-router-dom';
 import styles from '../styles/navbar.module.css';
 import '../App.css';
 import { useEffect, useRef, useState } from 'react';
+import { isVisible } from '@testing-library/user-event/dist/utils';
 
 export const Navbar = () => {
 
     const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = isSidebarVisible ? 'hidden' : 'unset';
+    }, [isSidebarVisible]);
 
     return (
 

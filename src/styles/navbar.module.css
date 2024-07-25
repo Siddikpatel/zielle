@@ -104,7 +104,6 @@
        flex-direction: column;
        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
        background-color: rgba(255, 255, 255, 0.8);
-       /* padding-left: 1.2em; */
        backdrop-filter: blur(8px);
        -webkit-backdrop-filter: blur(8px);
        transform: translate3d(0, 0, 0);
@@ -114,15 +113,10 @@
     .nav_desktop li:last-child {
         display: block;        
     }
-/* 
-    .nav_elements {
-        padding: 1.3em;
-    } */
 
     .nav_elements li {
         width: 100%;
         padding: 0.8em;
-        /* margin: 1em; */
     }
 
     .nav_elements li:not(:first-child):hover {
