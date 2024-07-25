@@ -17,7 +17,7 @@
   font-weight: 700;
   text-wrap: nowrap;
   padding: 0.7em;
-  font-size: clamp(10px, 3.5vw, 2em);
+  font-size: clamp(10px, 3.8vh, 2em);
   /* box-shadow: 1px 1px 6px 5px; */
 }
 

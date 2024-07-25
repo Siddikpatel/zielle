@@ -2,7 +2,7 @@
     height: fit-content;
     background-color: var(--CLR-PRIMARY);
     /* margin-top: 1.4em; */
-    font-size: clamp(1.2em, 2.6vh, 3em);
+    font-size: clamp(1em, 2vh, 1.5em);
     padding: 1.5em 1.5em 0.5em;
 }
 
@@ -46,6 +46,6 @@
 
     .col1, .col2, .col3, .col4 {
         width: 50%;
-        margin-bottom: 1.2em;
+        margin-bottom: 60px;
     }
 }
